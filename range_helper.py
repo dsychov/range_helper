@@ -178,7 +178,7 @@ class Opponent(object):
             if not self.action:
                 self.range_helper.set_range(text='Select {} player action'.format(self.label))
                 return
-            return '{}_{}_{}_{}'.format(result, self.type, self.position, self.action)
+            return '{}_{}_{}_{}_{}'.format(result, self.label, self.type, self.position, self.action)
         return result
 
 
